@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <style>
+    body { background-color: violet; }
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../images/healthtrack_logo.png"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/site.css">
+    <title>Health Track - Pressão Arterial</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/cadastro.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <header class="row">
+        <div class="hidden-sm hidden-xs col-md-1">
+        </div>
+        <div class="col-sm-2 hidden-xs">
+            <a href="index.html"><img src="../images/healthtrack_logo.png" id="logo" alt="Logo do Health Track" class="img-responsive img-size"></a>
+        </div>
+        <div class="col-sm-7 col-xs-12 col-md-6">
+            <h1 class=" text-center"> Lista de Pressão Arterial</h1>
+        </div>
+        <div class="col-sm-1 col-xs-8">
+            <a class="btn btn-primary centr" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                Menu <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </a>
+        </div>
+        <aside class="col-sm-2 centr col-xs-4">
+            <p>Olá, <span>Beatriz!</span></p>
+            <a href="perfil.html">Ver Perfil</a> |
+            <a href="index.html">Sair</a>
+        </aside>
+        <div class="collapse col-md-12" id="collapseExample">
+            <div class="">
+                <ul class="list-inline text-center nav nav-tabs nav-justified">
+                    <li aria-hidden="true" class="glyphicon" title="Dashboard"><a href="dashboard.html" ><img src="../images/glyphicons/png/glyphicons-21-home.png" alt="Dashboard"></a></li>
+                    <li aria-hidden="true" class="glyphicon" title="Lista de Peso"><a href="peso.html"><img src="../images/glyphicons/png/glyphicons-554-scale.png" alt="Lista de Peso"></a></li>
+                    <li aria-hidden="true" class="glyphicon" title="Lista de Alimentação"><a href="alimentacao.html"><img src="../images/glyphicons/png/glyphicons-277-cutlery.png" alt="Lista de Alimentação"></a></li>
+                    <li aria-hidden="true" class="glyphicon" title="Lista de Atividade Física"><a href="atvfisica.html"><img src="../images/glyphicons/png/glyphicons-635-teenager.png" alt="Lista de Atividades Físicas"></a></li>
+                    <li aria-hidden="true" class="glyphicon" title="Lista de Pressão Arterial"><a href="pressartl.html"><img src="../images/glyphicons/png/glyphicons-672-heartbeat.png" alt="Lista de Pressão Arterial"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</div>
+<section class="conteudo">
+    <div class="col-md-2 col-lg-3 hidden-sm hidden-xs">
+    </div>
+    <div class="col-md-8 col-xs-12 col-sm-12 col-lg-6 table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>P. Sistólica(mmHg)</th>
+                <th>P. Diastólica(mmHg)</th>
+                <th>Situação</th>
+                <th>Data</th>
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>120</td>
+                <td>90</td>
+                <td>NORMAL</td>
+                <td>04/12/2020</td>
+                <td><button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary glyphicon glyphicon-pencil form-control"></button></td>
+                <td><a href="#" class="btn btn-danger glyphicon glyphicon-remove form-control"></a></td>
+            </tr>
+            <tr>
+                <td>140</td>
+                <td>85</td>
+                <td>NORMAL</td>
+                <td>25/06/2021</td>
+                <td><button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary glyphicon glyphicon-pencil form-control"></button></td>
+                <td><a href="#" class="btn btn-danger glyphicon glyphicon-remove form-control"></a></td>
+            </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Adicionar novo
+        </button>
+    </div>
+    <div class="col-md-2 col-lg-3 hidden-sm hidden-xs">
+    </div>
+</section>
+<footer>
+    <div class="col-md-12 col-xs-12 footer">
+        <p>&copy Beatriz D´Ávila Valle</p>
+    </div>
+</footer>
+<!-- Modal -->
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-center">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Informe os dados sobre Pressão Arterial </h4>
+            </div>
+            <div class="modal-body">
+                <form id="newModalForm" role="form">
+                    <table class="table table-striped table-bordered">
+                        <tr>
+                            <td>
+                                <label>Pressão Sistólica</label>
+                            </td>
+                            <td>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="pressSis" placeholder="120">
+                                    <div class="input-group-addon">mmHg</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Pressão Diastólica</label>
+                            </td>
+                            <td>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="pressDias" placeholder="80">
+                                    <div class="input-group-addon">mmHg</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="data">Data</label>
+                            </td>
+                            <td>
+                                    <input type="datetime-local" name="calorias" class="form-control" id="data" placeholder="01/09/1990">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary button">Adicionar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</body>
+</html>

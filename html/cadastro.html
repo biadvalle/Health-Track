@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <style>
+    body { background-color: violet; }
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../images/healthtrack_logo.png"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Health Track - Cadastro</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/cadastro.js"></script>
+    <script type="text/javascript" src="../js/jquery.validate.min.js">
+    </script>
+</head>
+<body>
+<div class="container-fluid relative">
+    <header class="row">
+        <div class="col-md-2 hidden-xs hidden-sm">
+            <a href="index.html"><img src="../images/healthtrack_logo.png" id="logo" alt="Logo do Health Track" class="img-responsive img-size"></a>
+        </div>
+        <div class="col-md-2 hidden-xs">
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+            <h1> Criar conta </h1>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </header>
+</div>
+<section class="conteudo">
+    <div class="hidden-xs hidden-sm col-md-3">
+    </div>
+    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+        <div class="panel panel-primary jumbotron">
+            <div class="panel-heading text-center h4">Cadastro</div>
+            <div class="panel-body">
+                <form class="form-group required" action="dashboard.html" method="post">
+                    <div class="form-group">
+                        <label for="exampleInputName2" class="col-sm-12 label label-default">Nome Completo</label>
+                        <input type="text" class="form-control required col-sm-12" id="exampleInputName2" name="nome" placeholder="Nome Completo" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="data" class="col-sm-12 label label-default">Data de nascimento</label>
+                        <input type="date" class="form-control required col-sm-12" id="data" name="data" placeholder="Ex.: 09/12/1990">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-12 label label-default"> Gênero </label>
+                        <label class="radio-inline col-sm-6">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Masc"> Masculino
+                        </label>
+                        <label class="radio-inline col-sm-5 ">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Fem" checked> Feminino
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="altura" class="col-sm-12 label label-default">Altura (m)</label>
+                        <input type="text" class=" required  form-control" id="altura" name="altura" placeholder="1,56m">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail2" class="col-sm-12 label label-default">E-mail</label>
+                        <input type="email" class="form-control required col-sm-12" id="exampleInputEmail2" name="email" placeholder="meu@email.com.br">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" class="col-sm-12 label label-primary">Informe a senha</label>
+                        <input type="password" class="form-control required col-sm-12" id="exampleInputPassword1" name="password" placeholder="*********" title="Digite uma senha com no mínimo 6 dígitos">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password" class="col-sm-12 label label-primary">Confirme a senha</label>
+                        <input type="password" class="form-control required col-sm-12" id="confirm-password" name="confirmpassword" placeholder="*********">
+                    </div>
+                    <div>
+                        <div class="col-sm-8"></div>
+                        <div class="panel-footer">
+                        <button class="btn btn-primary">Cadastrar</button>
+                        <button class="btn btn-danger">Cancelar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    <div class="hidden-xs hidden-sm col-md-3">
+    </div>
+</section>
+<footer class="">
+    <div class="col-lg-12 footer">
+        <p>&copy Beatriz D´Ávila Valle</p>
+    </div>
+</footer>
+</body>
+</html>

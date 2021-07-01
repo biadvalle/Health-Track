@@ -1,0 +1,84 @@
+body {
+    /* background-image: url("../images/health.jpg");
+    background-repeat: no-repeat;
+    background-position: 100%; */
+    /* background-image: linear-gradient(240deg,
+    	transparent,
+    	rgba(200,200,200,.5),
+    	transparent,
+    	rgba(180,180,180,.5),
+    	transparent,
+    	rgba(150,150,150,.5));
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+	background-color: rgba(200,200,200,.5);
+    font-family: 'Open Sans', sans-serif;
+	opacity: 1;
+}
+
+.conteudo {
+	font-family: 'Open Sans', Arial, sans-serif;
+	opacity: 1;
+	transition: background 1.2s linear;
+}
+header {
+	/* background-color: rgba(0,120,255,.5); */
+	background-image: linear-gradient(to bottom, rgba(0,120,255,.5), rgba(220,220,220,.5));
+}
+
+.login button, a.button {
+	width: 150px;
+}
+
+
+
+.img-size {
+	width: 120px;
+	height: auto;
+}
+
+header h1 {
+	margin-top: 50px;
+	text-transform: uppercase;
+}
+
+.centr {
+	margin-top: 50px;
+	text-align: right;
+}
+
+.login2 {
+	width: 300px;
+	height: 400px;
+}
+/* Código CSS para a tela de LOGIN*/
+
+/* Código CSS para as telas conteudo e aside */
+.conteudo {
+	height: 120vh;
+}
+
+
+.nav-title {
+	border: 2px white;
+}
+
+/* Código CSS para o FOOTER */
+.footer {
+	bottom: 0;
+	width: 100%;
+	color: #fff;
+	background-color: #000;
+}
+
+/* Código CSS para as tabelas */
+
+.table-bordered {
+	border: 2px black;
+}
+
+/* Código CSS para as listas*/
+
+.full-width {
+	width: 100vh;
+}

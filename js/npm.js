@@ -1,0 +1,13 @@
+// Este arquivo é gerado automaticamente por meio da tarefa Grunt `commonjs`. Você pode solicitar () este arquivo em um ambiente CommonJS.
+requer ( '../../js/transition.js' )
+requer ( '../../js/alert.js' )
+require ( '../../js/button.js' )
+requer ( '../../js/carousel.js' )
+requer ( '../../js/collapse.js' )
+requer ( '../../js/dropdown.js' )
+requer ( '../../js/modal.js' )
+requer ( '../../js/tooltip.js' )
+requer ( '../../js/popover.js' )
+require ( '../../js/scrollspy.js' )
+requer ( '../../js/tab.js' )
+requer ( '../../js/affix.js' )

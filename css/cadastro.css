@@ -1,0 +1,7 @@
+.required.error {
+    border: 3px solid red;
+}
+
+.required.success {
+    border: 3px solid rgb(0, 128, 0);
+}
